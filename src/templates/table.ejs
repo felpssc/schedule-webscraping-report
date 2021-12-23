@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report</title>
+</head>
+<body>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Change</th>
+        <th>Language</th>
+        <th>Share</th>
+        <th>Trend</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data.forEach(item => { %>
+        <tr>
+            <td> <%= item.rank %>   </td>
+            <td> <%= item.change %>  </td>
+            <td> <%= item.language %>  </td>
+            <td> <%= item.share %>  </td>
+            <td> <%= item.trend %>  </td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</body>
+</html>
